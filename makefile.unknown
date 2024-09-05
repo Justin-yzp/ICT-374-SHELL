@@ -1,0 +1,13 @@
+# Makefile
+
+simpleShell: simpleShell.o command.o 
+	gcc -std=c99 simpleShell.o command.o -o simpleShell
+
+simpleShell.o: simpleShell.c
+	gcc -std=c99 -c simpleShell.c
+
+command.o: command.c command.h
+	gcc -std=c99 -c command.c
+
+clean:
+	rm -f *.o simpleShell
