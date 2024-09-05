@@ -16,3 +16,23 @@ This is a simple custom shell program implemented in C. The shell provides basic
 1. Compile the program using `gcc`:
    ```bash
    gcc -o shell shell.c command.c
+   ```
+
+2. Run the shell:
+   ```bash
+   ./shell
+   ```
+
+3. Use the shell commands as you would in a standard Unix shell.
+
+## Files
+
+- `shell.c`: The main shell program.
+- `command.c`: Contains command-related functions.
+
+## Compilation
+
+Use the following command to compile:
+```bash
+gcc -o shell shell.c command.c
+```
